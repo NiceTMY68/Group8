@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 
 const AddProduct = () => {
   const [newProduct, setNewProduct] = useState({
-    name: '',
-    description: '',
-    price: '',
-    image: '',
     category: 'Men shoes',
     brand: '',
-    quantity: ''
+    name: '',
+    quantity: '',
+    price: '',
+    description: '',
+    image: '',
   });
 
   const [products, setProducts] = useState([]);
@@ -33,12 +33,13 @@ const AddProduct = () => {
 
   const validateForm = () => {
     if (
-      !newProduct.name ||
-      !newProduct.description ||
-      !newProduct.price ||
-      !newProduct.image ||
+      !newProduct.category ||
       !newProduct.brand ||
-      !newProduct.quantity
+      !newProduct.name ||
+      !newProduct.quantity ||
+      !newProduct.price ||
+      !newProduct.description ||
+      !newProduct.image
     ) {
       setError('All fields are required!');
       return false;
@@ -58,7 +59,7 @@ const AddProduct = () => {
 
     const productToAdd = { ...newProduct, id: newId };
 
-    fetch('/products', {
+    fetch('http://localhost:3000/products', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -69,13 +70,13 @@ const AddProduct = () => {
       .then((data) => {
         alert('Product added successfully');
         setNewProduct({
-          name: '',
-          description: '',
-          price: '',
-          image: '',
           category: 'Men shoes',
           brand: '',
-          quantity: ''
+          name: '',
+          quantity: '',
+          price: '',
+          description: '',
+          image: '',
         });
       })
       .catch((error) => {
@@ -88,54 +89,6 @@ const AddProduct = () => {
     <div>
       <h1>Add New Product</h1>
       <form onSubmit={handleAddProduct}>
-        <div>
-          <label>Name</label>
-          <input
-            type="text"
-            name="name"
-            value={newProduct.name}
-            onChange={handleInputChange}
-            placeholder="Product Name"
-            required
-          />
-        </div>
-
-        <div>
-          <label>Description</label>
-          <input
-            type="text"
-            name="description"
-            value={newProduct.description}
-            onChange={handleInputChange}
-            placeholder="Description"
-            required
-          />
-        </div>
-
-        <div>
-          <label>Price</label>
-          <input
-            type="text"
-            name="price"
-            value={newProduct.price}
-            onChange={handleInputChange}
-            placeholder="Price"
-            required
-          />
-        </div>
-
-        <div>
-          <label>Image URL</label>
-          <input
-            type="text"
-            name="image"
-            value={newProduct.image}
-            onChange={handleInputChange}
-            placeholder="Image URL"
-            required
-          />
-        </div>
-
         <div>
           <label>Category</label>
           <select
@@ -162,6 +115,18 @@ const AddProduct = () => {
         </div>
 
         <div>
+          <label>Name</label>
+          <input
+            type="text"
+            name="name"
+            value={newProduct.name}
+            onChange={handleInputChange}
+            placeholder="Product Name"
+            required
+          />
+        </div>
+
+        <div>
           <label>Quantity</label>
           <input
             type="number"
@@ -169,6 +134,42 @@ const AddProduct = () => {
             value={newProduct.quantity}
             onChange={handleInputChange}
             placeholder="Quantity"
+            required
+          />
+        </div>
+
+        <div>
+          <label>Price</label>
+          <input
+            type="text"
+            name="price"
+            value={newProduct.price}
+            onChange={handleInputChange}
+            placeholder="Price"
+            required
+          />
+        </div>
+
+        <div>
+          <label>Description</label>
+          <input
+            type="text"
+            name="description"
+            value={newProduct.description}
+            onChange={handleInputChange}
+            placeholder="Description"
+            required
+          />
+        </div>
+
+        <div>
+          <label>Image URL</label>
+          <input
+            type="text"
+            name="image"
+            value={newProduct.image}
+            onChange={handleInputChange}
+            placeholder="Image URL"
             required
           />
         </div>
