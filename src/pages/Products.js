@@ -5,8 +5,7 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    // Sửa đường dẫn API cho chính xác
-    fetch('http://localhost:3000/products')  // Đường dẫn đến json-server API
+    fetch('http://localhost:3000/products')
       .then(response => response.json())
       .then(data => {
         if (Array.isArray(data)) {

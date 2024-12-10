@@ -7,12 +7,17 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="product-card">
-      <Link to={`/product/${product.id}`}>
-        <img src={product.img} alt={product.name} />
-        <h2>{product.name}</h2>
-        <p>${product.price}</p>
+      <Link to={`/product/${product.id}`} className="product-link">
+        <img src={product.image} alt={product.name} className="product-image" />
+        <p className="product-price">{product.price}₫</p>
+        <h3 className="product-brand-name">
+          {product.brand} {product.name}
+        </h3>
+        <p className="product-category">{product.category}</p>
       </Link>
-      <button onClick={() => addToCart(product)}>Add to Cart</button>
+      <button onClick={() => addToCart(product)} className="add-to-cart">
+        Add to Cart
+      </button>
     </div>
   );
 };

@@ -1,17 +1,76 @@
 {
-    "account": [],
-    "products": [
-      {
-        "id": 1,
-        "category": "Men Shoes",
-        "brand": "Nike",
-        "name": "Air Jordan 1 Low",
-        "quantity": "30",
-        "price": "3,519,000",
-        "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low offers a classic look designed with premium materials like leather and suede, creating a look curated for the City of Light.",
-        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/33b8c2f1-385f-4398-8fb8-6b46f6c3e713/AIR+JORDAN+1+LOW.png"
-      }
-    ],
-    "cart": []
-  }
-  
+  "account": [],
+  "products": [
+    {
+      "id": 1,
+      "category": "Men Shoes",
+      "brand": "Nike",
+      "name": "Air Jordan 1 Low",
+      "quantity": "30",
+      "price": "3,519,000",
+      "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low offers a classic look designed with premium materials like leather and suede, creating a look curated for the City of Light.",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/33b8c2f1-385f-4398-8fb8-6b46f6c3e713/AIR+JORDAN+1+LOW.png"
+    },
+    {
+      "id": 2,
+      "category": "Women shoes",
+      "brand": "Nike",
+      "name": "Air Jordan 1 Mid SE",
+      "quantity": "13",
+      "price": "3,167,199",
+      "description": "Add some pop to your 'fit with this refreshed AJ1. Subtle stripes, premium leather, soft suede and a touch of durable cotton give this icon a fresh look. Plus, classic Air cushioning lets you comfortably step into your day.",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d8a45342-8827-4e95-a10e-8eff698093d8/WMNS+AIR+JORDAN+1+MID+SE.png"
+    },
+    {
+      "id": 4,
+      "category": "Kid shoes",
+      "brand": "Nike",
+      "name": "Cortez EasyOn",
+      "quantity": "16",
+      "price": "1,279,000",
+      "description": "How do you make a classic like the Cortez even better? Make it quick and easy to put on, of course. The lace area opens up wide so squirming feet can slip in easily. A hook-and-loop strap lets you lock in or adjust the fit fast. Plus, extra wiggle room in the toe box helps give little feet the space they need to feel comfortable.",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/97d483f7-5265-4059-bae0-94a50665aa09/NIKE+KIDS+CORTEZ+EASYON+%28TDV%29.png"
+    },
+    {
+      "id": 3,
+      "category": "Men shoes",
+      "brand": "Adidas",
+      "name": "Fear of God Athletics II High Top Basketball Shoes",
+      "quantity": "4",
+      "price": "5,700,000",
+      "description": "The Fear of God Athletics II BASKETBALL is uniquely positioned at the intersection of fashion and sport. Fear of God style codes are maintained in this high-collared strap version with a sculpted translucent rubber outsole. The shoe is crafted in a premium suede upper for a soft luxury hand-feel and monofilament striped panels for visual transparency and breathability. The Lightstrike midsole delivers elite comfort infused with a TPU shank for spring and propulsion. An embossed adidas logo on the toe, and a black bar embossed with the Fear of God logo on the heel.",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2018077b1e6a4151a4e2500cc4388c41_9366/Fear_of_God_Athletics_II_High_Top_Basketball_Shoes_Brown_JQ8482_HM3_hover.jpg"
+    },
+    {
+      "id": 5,
+      "category": "Women shoes",
+      "brand": "Adidas",
+      "name": "Tour360 24 BOA Boost Golf Shoes",
+      "quantity": "19",
+      "price": "6,000,000",
+      "description": "The adidas Tour360 24 golf shoes deliver premium performance for dedicated golfers. Featuring a waterproof microfibre leather upper with 360WRAP and the BOA® Fit system for a secure fit, they provide elite support. Lightstrike cushioning, JET BOOST in the heel, and an internal stabiliser energise every step for powerful drives. Crafted with at least 20% recycled and renewable materials, they combine comfort, sustainability, and confidence for tournament-level play.",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e01c04d73b404d01bc65cd0d6ac3dfc2_9366/Tour360_24_BOA_Boost_Golf_Shoes_Grey_IG8122_04_standard.jpg"
+    },
+    {
+      "id": 6,
+      "category": "Kid shoes",
+      "brand": "Adidas",
+      "name": "Adifom Climacool Shoes Kids",
+      "quantity": "22",
+      "price": "2,200,000",
+      "description": " Experience all-day comfort with these adidas juniors' shoes, featuring a bio-based foam shell and breathable mesh interior for a lightweight, modern feel. Made with at least 50% recycled materials, they blend style, comfort, and sustainability to help reduce plastic waste.",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9dfe2a7b395b4d5f9ad5c5113413ab43_9366/Adifom_Climacool_Shoes_Kids_Beige_IF6583_04_standard.jpg"
+    },
+    {
+      "id": 7,
+      "category": "Women shoes",
+      "brand": "Puma",
+      "name": "DSQUARED2",
+      "quantity": "4",
+      "price": "42,000,000",
+      "description": "A symbol of luxurious fashion for women, the Canadian boots feature a sleek pointed toe that exudes elegance, paired with graceful stiletto heels to boost your confidence with every step. Crafted from premium leather, these boots are the perfect companion to conquer life's peaks and showcase your sophistication.",
+      "image": "https://product.hstatic.net/1000284478/product/m2029_abw0199_3_60dd4bc539a245c38f2b21874a5e735b_large.jpg"
+    }
+  ],
+  "cart": []
+}
