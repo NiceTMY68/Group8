@@ -1,0 +1,17 @@
+{
+    "account": [],
+    "products": [
+      {
+        "id": 1,
+        "category": "Men Shoes",
+        "brand": "Nike",
+        "name": "Air Jordan 1 Low",
+        "quantity": "30",
+        "price": "3,519,000",
+        "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low offers a classic look designed with premium materials like leather and suede, creating a look curated for the City of Light.",
+        "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/33b8c2f1-385f-4398-8fb8-6b46f6c3e713/AIR+JORDAN+1+LOW.png"
+      }
+    ],
+    "cart": []
+  }
+  
