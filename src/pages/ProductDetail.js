@@ -5,11 +5,9 @@ const ProductDetail = () => {
   const [product, setProduct] = useState(null);
   const { id } = useParams();
   useEffect(() => {
-    // Lấy dữ liệu từ public/db.json
     fetch('/db.json')
       .then((response) => response.json())
       .then((data) => {
-        // Xử lý dữ liệu
         const product = data.products.find((p) => p.id === parseInt(id));
         setProduct(product);
       })
