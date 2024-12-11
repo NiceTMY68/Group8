@@ -1,4 +1,5 @@
 import React, { createContext, useState, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const CartContext = createContext();
 
@@ -8,6 +9,8 @@ export const useCart = () => {
 
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+  const [user, setUser] = useState(null);
+  const navigate = useNavigate(); // Hook để chuyển trang
 
   const addToCart = (product) => {
     setCart((prevCart) => {
@@ -21,8 +24,18 @@ export const CartProvider = ({ children }) => {
     });
   };
 
+  const login = (userData) => {
+    setUser(userData);
+  };
+
+  const logout = () => {
+    setUser(null);
+    setCart([]);
+    navigate("/"); // Chuyển hướng về trang Home
+  };
+
   return (
-    <CartContext.Provider value={{ cart, addToCart }}>
+    <CartContext.Provider value={{ cart, addToCart, user, login, logout }}>
       {children}
     </CartContext.Provider>
   );

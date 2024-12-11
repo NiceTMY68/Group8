@@ -1,5 +1,12 @@
 {
-  "account": [],
+  "users": [
+    {
+      "id": "d249",
+      "name": "Quy",
+      "email": "doanvoquy1@gmail.com",
+      "password": "123456"
+    }
+  ],
   "products": [
     {
       "id": 1,

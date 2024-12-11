@@ -7,13 +7,15 @@ import About from "./pages/About";
 import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 import AddProduct from "./pages/AddProduct";
+import SignUp from "./pages/SignUp";
+import SignIn from "./pages/SignIn";
 import { CartProvider } from './context/CartContext';
 import './assets/styles.css';
 
 const App = () => {
   return (
-    <CartProvider>
-      <Router>
+    <Router>
+      <CartProvider>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -21,10 +23,13 @@ const App = () => {
           <Route path="/products" element={<Products />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/add-product" element={<AddProduct />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/signin" element={<SignIn />} />
         </Routes>
         <Footer />
-      </Router>
-    </CartProvider>
+      </CartProvider>
+    </Router>
+
   );
 };
 
